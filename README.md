@@ -14,7 +14,10 @@ This script uses the [Triangulator](http://wiki.unity3d.com/index.php?title=Tria
 
 Just **[download the script](PolygonMesh2D.cs)** and place it somewhere inside your Unity project's assets.
 Everything needed in contained within one file. 
-Use the component by dragging it onto a GameObject or by using the Add Component dialog.
+
+Use the component by dragging it onto a GameObject or by using the Add Component dialog. This will automatically add a Polygon Collider 2D component if it isn't already present. 
+
+In the Polygon Collider 2D Component, click the "Edit Collider" button to adjust the shape of the collider. The mesh will autoatically adjust itself to fill the collider.
 
 ## Licensing
 
