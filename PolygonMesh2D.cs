@@ -39,12 +39,7 @@ public class PolygonMesh2D : MonoBehaviour {
 		//recalculate UV
 		Bounds bounds = msh.bounds;
 
-		Vector2[] uvs = new Vector2[path.Length];
-		for(int i = 0; i < path.Length; i++)
-		{
-			uvs[i] = new Vector2(path[i].x / bounds.size.x, path[i].y / bounds.size.y);
-		}
-		msh.uv = uvs;
+		msh.uv = path.Select(v => new Vector2(v.x / bounds.size.x, v.y / bounds.size.y));
 	}
 
 	void Update() {
