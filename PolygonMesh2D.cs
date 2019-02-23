@@ -35,6 +35,16 @@ public class PolygonMesh2D : MonoBehaviour {
 		msh.RecalculateNormals();
 		msh.RecalculateBounds();
 		meshFilter.mesh = msh;
+
+		//recalculate UV
+		Bounds bounds = msh.bounds;
+
+		Vector2[] uvs = new Vector2[path.Length];
+		for(int i = 0; i < path.Length; i++)
+		{
+			uvs[i] = new Vector2(path[i].x / bounds.size.x, path[i].y / bounds.size.y);
+		}
+		msh.uv = uvs;
 	}
 
 	void Update() {
