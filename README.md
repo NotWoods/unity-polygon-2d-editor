@@ -1,4 +1,4 @@
-![](https://tigeroakes.com/images/unity-polygon/logo.png)
+<img alt="" src="https://tigeroakes.com/projects/unity-polygon/logo.png" height="128" width="128">
 
 # Polygon2D Editor for Unity
 
